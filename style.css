@@ -26,7 +26,20 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.menu-icon{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.nav_menu3dot{
+    display: none;
+}
+.navstyle{
+    align-items: center;
+}.navstyle > li > a{
+    margin-left: 3rem;
+    color: rgb(58, 58, 58);
+}
 .nav h2{
     color: rgb(58, 58, 58);
     font-size: 1.5rem;
@@ -139,6 +152,8 @@
 
 .cart1{
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -231,22 +246,32 @@
 }
 
 @media screen and (max-width: 573px){
-    .nav
-{
-    flex-direction: column;
+.nav{
     align-items: center;
-
+}
+.menu-icon{
+    display: flex;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-top: 10px;
 }
 .nav_menu{
+    
     align-items: center;
+    display: none;
 }
+
 .nav_menu > li > a{
     color: rgb(58, 58, 58);
     font-size: 1rem;
     font-weight: 600;
     margin-left: 1rem;
 }
-
+.navstyle > li > a {
+    margin-left: 0rem;
+    color: rgb(58, 58, 58);
+}
 
 
 .banner{
@@ -283,7 +308,7 @@
 }
 .collaction{
     margin-top: 2rem;
-    padding: 0 20px;
+    padding: 0 1rem;
 }
 
 
