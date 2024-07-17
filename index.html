@@ -11,8 +11,8 @@
     <section class="body1">
         <div class="nav displayflex">
             <div class="menu-icon">
-                <img src="../logos/menu.svg" alt="">
-                <ul class="nav_menu3dot displayflex">
+                <div class="das" onclick= showSidebar()> <a href=""><img src="./logos/menu.svg" alt=""></a></div>
+                <ul class="nav_menu3dot ">
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -254,6 +254,12 @@
             </div>
         </div>
     </section>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.nav_menu3dot')
+            sidebar.style.display = 'flex'
+        }
+    </script>
     
 </body>
 

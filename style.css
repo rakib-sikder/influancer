@@ -31,9 +31,42 @@
     position: absolute;
     cursor: pointer;
 }
+
+
+
+
 .nav_menu3dot{
-    display: none;
+    display: none ;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.192);
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    width: 150px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 0;
 }
+.nav_menu3dot li{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    
+}
+.nav_menu3dot li a{
+    width: 100%;
+    color: rgb(0, 0, 0);
+text-align: left;
+}
+
+
+
+
+
+
 .navstyle{
     align-items: center;
 }.navstyle > li > a{
@@ -308,7 +341,7 @@
 }
 .collaction{
     margin-top: 2rem;
-    padding: 0 1rem;
+    padding: 0rem;
 }
 
 
